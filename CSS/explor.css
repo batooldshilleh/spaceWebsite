@@ -407,6 +407,7 @@ main .container .right{
     display: grid;
     place-items: center;
     font-size: 0.9rem;
+    display: none;
 }
 
 .customize-theme .card{
@@ -444,4 +445,104 @@ main .container .right{
     height: 1rem;
     background: var(--color-secondary);
     border-radius: 50%;
+    cursor: pointer;
+}
+
+.customize-theme .choose-size span.active{
+    background: var(--color-primary);
+}
+
+.customize-theme .color{
+    margin-top: 2rem;
+}
+
+.customize-theme .choose-color{
+    background: var(--color-light);
+    padding: var(--search-padding);
+    border-radius: var(--card-border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.customize-theme .choose-color span{
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+
+}
+
+.customize-theme .choose-color span:nth-child(1){
+    background: hsl(252,75%,60%);
+}
+
+.customize-theme .choose-color span:nth-child(2){
+    background: hsl(52,75%,60%);
+}
+
+.customize-theme .choose-color span:nth-child(3){
+    background: hsl(352,75%,60%);
+}
+
+.customize-theme .choose-color span:nth-child(4){
+    background: hsl(152,75%,60%);
+}
+
+.customize-theme .choose-color span:nth-child(5){
+    background: hsl(202,75%,60%);
+}
+
+.customize-theme .choose-color span.active{
+    border: 5px solid white;
+}
+
+@media screen and (max-width: 1200px) {
+    .container{
+        width: 96%;
+    }
+
+    main .container{
+        grid-template-columns: 5rem auto 30vw ;
+        gap: 1rem;
+    }
+
+    .left{
+        width: 5rem;
+        z-index: 5;
+    }
+
+    main .container .left .profile{
+        display: none;
+    }
+
+    .sideBar h3{
+        display: none;
+    }
+
+    .left .btn{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    nav .search-bar{
+        display: none;
+    }
+
+    main .container{
+        grid-template-columns: 0 auto 5rem;
+    }
+
+    main .container .left{
+        grid-column: 3/4;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+
+    .left .notification-popup{
+        position: absolute;
+        left: -20rem;
+        width: 20rem;
+    }
 }
