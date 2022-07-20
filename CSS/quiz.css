@@ -7,7 +7,7 @@
 
 body{
     background-color: #8a6def;
-    background-image: linear-gradient(315deg, #a392f1 0%, #27278a 100%);
+    background: white;
     font-family: 'Tajawal', sans-serif;
     display: flex;
     align-items: center;
@@ -22,7 +22,7 @@ body{
 .quiz-container{
     background-color: #f6f6f6;
     border-radius: 10px;
-    box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+    box-shadow: 0 0 10px 2px rgb(184, 167, 232);
     width: 600px;
     overflow: hidden;
 }
