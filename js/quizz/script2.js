@@ -91,13 +91,17 @@ submitBtn.addEventListener('click', () => {
            loadQuiz()
        } else {
            quiz.innerHTML = `
-           <h2>You answered ${score}/${quizData.length} questions correctly</h2>
+                <h2>
+           لقد حصلت على 
+                ${score}/${quizData.length} 
+                من الإجابات الصحيحة
+                </h2>
 
            <button onclick="location.reload()">
                     إعادة 
             </button>
             
-            <button onclick = "location.href='quiz.html'"  >
+            <button onclick = "location.href='../quiz.html'"  >
                 الصفحة الرئيسية
             </button>
            `

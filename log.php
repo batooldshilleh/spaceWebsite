@@ -49,6 +49,11 @@ if(isset($_POST['reg_est'])){
 <!--login-->
 <?php
 session_start();
+error_reporting(0);
+
+if (isset($_SESSION['userName'])) {
+    header("Location: home.php");
+}
 if(isset($_POST['lb'])){
     $u_n =$_POST['e_m'];
     $pass =$_POST['Pass_word'];
