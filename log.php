@@ -1,3 +1,72 @@
+<!---->
+<?php
+
+$server ="localhost";
+$username = "root";
+$password = "";
+$databaseName = "space_project";
+
+$con = mysqli_connect($server,$username,$password,$databaseName);
+?>
+
+<!--creat acaunt-->
+<?php
+#get data from text field
+if(isset($_POST['reg_est'])){
+    $un =$_POST['unr'];
+    $em =$_POST['er'];
+    $p = $_POST['rp'];
+
+    $sql_ ="SELECT * FROM user WHERE userName = '$un'";
+
+    $result =mysqli_query($con,$sql_);
+
+    if(!$result->num_rows > 0){
+        $sql ="INSERT INTO user (userName,	email,password) VALUES ('$un','$em','$p')";
+
+        $res = mysqli_query($con,$sql);
+
+        if($res){
+            echo "<script>
+                    alert('لقد تم إنشاء الحساب')
+                </script> " ;
+
+            #remove text from text field
+            $un="";
+            $p="";
+            $em="";
+
+        }
+
+    }
+
+    else{
+        echo  "<script>alert('خطا في المعلومات المدخلة')</script> ";
+    }
+}
+?>
+
+<!--login-->
+<?php
+session_start();
+if(isset($_POST['lb'])){
+    $u_n =$_POST['e_m'];
+    $pass =$_POST['Pass_word'];
+    $sql_l="SELECT * FROM user WHERE email='$u_n' AND password='$pass'";
+    $res_log = mysqli_query($con,$sql_l);
+    if(!$res_log -> num_rows >0){
+        $row = mysqli_fetch_assoc($res_log);
+        $_SESSION['userName'] = $row['userName'];
+        header("Loc:explor.php");
+    }
+    else{
+        echo "<script>
+                    alert(' هناك خطأ في كلمة المرور أو البريد الإلكتروني ')
+                </script> " ;
+
+    }
+}
+?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -21,13 +90,14 @@
 
 <body>
 
+
 <div class="container">
 
   <div class="forms-container">
 
     <div class="signin-signup">
 
-      <form action="#" class="sign-in-form">
+      <form  class="sign-in-form" method="post">
 
         <h2 class="title">تسجيل الدخول</h2>
 
@@ -35,7 +105,7 @@
 
           <i class="fas fa-user"></i>
 
-          <input type="text" placeholder="اسم المستخدم" />
+          <input type="text" placeholder="البريد الإلكتروني" name="e_m" />
 
         </div>
 
@@ -43,11 +113,11 @@
 
           <i class="fas fa-lock"></i>
 
-          <input type="password" placeholder="كلمة المرور" />
+          <input type="password" placeholder="كلمة المرور" name="Pass_word" />
 
         </div>
 
-        <input type="submit" value="تسجيل الدخول" class="btn solid" />
+        <input type="submit" value="تسجيل الدخول" class="btn solid" name="lb"/>
 
         <p class="social-text">يمكنك تسجيل الدخول عن طريق </p>
 
@@ -81,15 +151,15 @@
 
       </form>
 
-      <form action="#" class="sign-up-form">
+      <form  action="" class="sign-up-form" method="post" id="reg">
 
-        <h2 class="title">إنشاء حساب</h2>
+          <h2 class="title">إنشاء حساب</h2>
 
         <div class="input-field">
 
           <i class="fas fa-user"></i>
 
-          <input type="text" placeholder="اسم المستخدم" />
+          <input type="text" name="unr" placeholder="اسم المستخدم" />
 
         </div>
 
@@ -97,7 +167,7 @@
 
           <i class="fas fa-envelope"></i>
 
-          <input type="email" placeholder="البريد الإلكتروني" />
+          <input type="email" name="er" placeholder="البريد الإلكتروني" />
 
         </div>
 
@@ -105,11 +175,11 @@
 
           <i class="fas fa-lock"></i>
 
-          <input type="password" placeholder="كلمة المرور" />
+          <input type="password" name="rp" placeholder="كلمة المرور" />
 
         </div>
 
-        <input type="submit" class="btn" value="إنشاء حساب" />
+          <button name = "reg_est" type="submit" class="btn" >إنشاء حساب</button>
 
         <p class="social-text">أو يمكنك إنشاء حساب عن طريق </p>
 
@@ -140,6 +210,8 @@
           </a>
 
         </div>
+
+
 
       </form>
 

@@ -1,10 +1,10 @@
 const quizData = [
     {
-        question: "اسم المجرة التي تقع فيها المجموعة الشمسية ؟",
-        a: "العين السوداء",
-        b: "درب التبانة",
-        c: "سحابة ماجلان الكبرى",
-        d: "المرأة المسلسلة",
+        question: "الكوكب الذي يمتلك أكبر عدد من الأقمار ؟",
+        a: "زحل",
+        b: "المشتري",
+        c: "كلاهما",
+        d: "لا أحد منهما",
         correct: "b",
     },
     {
@@ -93,7 +93,13 @@ submitBtn.addEventListener('click', () => {
            quiz.innerHTML = `
            <h2>You answered ${score}/${quizData.length} questions correctly</h2>
 
-           <button onclick="location.reload()">Reload</button>
+           <button onclick="location.reload()">
+                    إعادة 
+            </button>
+            
+            <button onclick = "window.location.href='quiz.html'"  >
+                الصفحة الرئيسية
+            </button>
            `
        }
     }

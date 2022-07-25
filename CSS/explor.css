@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200&display=swap');
 
 :root{
+    --primary-color-hue:252;
     --color-dark : hsl(252,30%,17%);
     --color-white : hsl(252,30%,100%);
     --color-light: hsl(252,30%,95%);
     --color-gray : hsl(252,15%,65%);
-    --color-primary : hsl(252,75%,60%);
+    --color-primary : hsl(var(--primary-color-hue),75%,60%);
     --color-secondary : hsl(252,100%,90%);
     --color-success : hsl(120,95%,65%);
     --color-danger : hsl(0,95%,65%);
@@ -222,7 +223,7 @@ main .container .left .profile{
 .left .notification-popup{
     position: absolute;
     top: 0;
-    left: 110%;
+    left: 100%;
     width: 30rem;
     background: var(--color-white);
     border-radius: var(--card-border-radius);
@@ -237,7 +238,7 @@ main .container .left .profile{
     width: 1.2rem;
     height: 1.2rem;
     display: block;
-    background: red;
+    background: #ffffff;
     position: absolute;
     left: -0.6rem;
     transform: rotate(45deg);
@@ -415,6 +416,7 @@ main .container .right{
     padding: 3rem;
     border-radius: var(--card-border-radius);
     width: 50%;
+    box-shadow: 0 0 1rem var(--color-primary);
 }
 
 .customize-theme .font-size{

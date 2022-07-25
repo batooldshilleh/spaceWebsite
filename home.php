@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!doctype html>
 
 <html lang="en">
@@ -111,7 +115,7 @@
                        والكويكبات ، والمذنبات ، والنيازك
                    </p>
 
-                   <a href="log.html"  class="btn btn-main" >إنضم إلينا</a>
+                   <a href="log.php" class="btn btn-main" >إنضم إلينا</a>
 
                </div>
 
