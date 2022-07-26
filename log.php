@@ -8,14 +8,19 @@ $databaseName = "space_project";
 
 $con = mysqli_connect($server,$username,$password,$databaseName);
 ?>
-
 <!--creat acaunt-->
 <?php
+session_start();
+error_reporting(0);
+
+if (isset($_SESSION['userName'])) {
+    header("Location: home.php");
+}
 #get data from text field
 if(isset($_POST['reg_est'])){
     $un =$_POST['unr'];
     $em =$_POST['er'];
-    $p = $_POST['rp'];
+    $p =md5( $_POST['rp']);
 
     $sql_ ="SELECT * FROM user WHERE userName = '$un'";
 
@@ -52,17 +57,17 @@ session_start();
 error_reporting(0);
 
 if (isset($_SESSION['userName'])) {
-    header("Location: home.php");
+    header("Location: explor.php");
 }
 if(isset($_POST['lb'])){
     $u_n =$_POST['e_m'];
-    $pass =$_POST['Pass_word'];
+    $pass = md5($_POST['Pass_word']);
     $sql_l="SELECT * FROM user WHERE email='$u_n' AND password='$pass'";
     $res_log = mysqli_query($con,$sql_l);
-    if(!$res_log -> num_rows >0){
+    if($res_log-> num_rows >0){
         $row = mysqli_fetch_assoc($res_log);
         $_SESSION['userName'] = $row['userName'];
-        header("Loc:explor.php");
+        header("Location:explor.php");
     }
     else{
         echo "<script>
@@ -110,7 +115,7 @@ if(isset($_POST['lb'])){
 
           <i class="fas fa-user"></i>
 
-          <input type="text" placeholder="البريد الإلكتروني" name="e_m" />
+          <input type="text" placeholder="البريد الإلكتروني" name="e_m" required  />
 
         </div>
 
@@ -118,7 +123,7 @@ if(isset($_POST['lb'])){
 
           <i class="fas fa-lock"></i>
 
-          <input type="password" placeholder="كلمة المرور" name="Pass_word" />
+          <input type="password" placeholder="كلمة المرور" name="Pass_word" required />
 
         </div>
 

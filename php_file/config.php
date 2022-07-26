@@ -5,5 +5,5 @@ $username = "root";
 $password = "";
 $databaseName = " space_project";
 
-$con = mysqli_connect($server,$username,$password,$databaseName);
+$con = mysqli("localhost","root",""," space_project",3307);
 ?>

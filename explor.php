@@ -1,3 +1,9 @@
+<?php
+session_start();
+//if(isset(!$_SESSION['userName'])){
+//    header("loc:log.php");
+//}
+//?>
 <!DOCTYPE html>
 
 <html lang="en">
