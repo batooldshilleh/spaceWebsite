@@ -76,7 +76,7 @@ const videoTitle = document.querySelector('.title');
 
 
 const ulTag = document.querySelector("ul");
-AllLessons.innerHTML = `${allVideos.length} Lessons`
+AllLessons.innerHTML = `${allVideos.length} حصص `
 
 
 let musicIndex = 1;
