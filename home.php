@@ -89,7 +89,7 @@
 
     <!--home-->
 
-    <section id="home" lass="bg-cover hero-section" style="background-image: url(home-img/1.jpeg);height: 600px;">
+    <section id="home" lass="bg-cover hero-section" style="background-image: url(IMGES/home-img/1.jpeg);height: 600px;">
 
        <div class="overlay">
 
@@ -116,7 +116,7 @@
                        والكويكبات ، والمذنبات ، والنيازك
                    </p>
 
-                   <a href="log.php" class="btn btn-main" data-aos="fade-right">إنضم إلينا</a>
+                   <a href="log.php" class="btn btn-main" data-aos="fade-up"">إنضم إلينا</a>
 
                </div>
 
@@ -136,11 +136,11 @@
 
                 <div class="col-12 section-intro text-center" data-aos="fade-up" >
 
-                    <h1 style="color: black">خدمتنا</h1>
+                    <h1 style="color: black" data-aos="fade-right">خدماتنا</h1>
 
                     <div class="divider"></div>
 
-                    <p style="color: black">
+                    <p style="color: black" data-aos="fade-right">
                         يوفر موقعنا عدة خدمات لمراقبة الفضاء والتعلم المزيد عنه<br>
                         كن أقرب إلى السماء
                     </p>
@@ -159,7 +159,7 @@
 
                     <div class="service-im">
 
-                        <img src="home-img/stargaz.jpeg" data-aos="fade-right">
+                        <img src="IMGES/home-img/stargaz.jpeg" data-aos="fade-right">
 
                         <div class="icon">
 
@@ -169,9 +169,9 @@
 
                     </div>
 
-                    <h6 class="mt-5 pt-4">مراقبة النجوم</h6>
+                    <h6 class="mt-5 pt-4" data-aos="fade-left">مراقبة النجوم</h6>
 
-                    <p style="margin-left: 40px">
+                    <p style="margin-left: 40px"data-aos="fade-left">
                         يوفر الموقع خريطة سماء تمكنك من مراقبة السماء عن كثب دون الحاجة لمقراب
                     </p>
 
@@ -185,7 +185,7 @@
 
                     <div class="service-im">
 
-                        <img src="home-img/esay.jpeg" data-aos="fade-right">
+                        <img src="IMGES/home-img/esay.jpeg" data-aos="fade-right">
 
                         <div class="icon">
 
@@ -195,9 +195,9 @@
 
                     </div>
 
-                    <h6 class="mt-5 pt-4">المقالات</h6>
+                    <h6 class="mt-5 pt-4" data-aos="fade-left">المقالات</h6>
 
-                    <p style="margin-left: 40px">
+                    <p style="margin-left: 40px"data-aos="fade-left">
                         شاركنا بحثك الخاص عن الامور المتعلقة بالفضاء ، أو مقالا
                         قمت بترجمته
                     </p>
@@ -212,7 +212,7 @@
 
                     <div class="service-im">
 
-                        <img src="home-img/learn.jpeg" data-aos="fade-right">
+                        <img src="IMGES/home-img/learn.jpeg" data-aos="fade-right">
 
                         <div class="icon">
 
@@ -222,9 +222,9 @@
 
                     </div>
 
-                    <h6 class="mt-5 pt-4">تعلم</h6>
+                    <h6 class="mt-5 pt-4"data-aos="fade-left">تعلم</h6>
 
-                    <p style="margin-left: 40px">
+                    <p style="margin-left: 40px" data-aos="fade-left">
                         يوفر موقعنا عدة أدوات لزيادة حصيلتك العلمية
                         و تقويتها
                     </p>
@@ -239,7 +239,7 @@
 
     <!--about-->
 
-    <section id="about" class="bg-cover" style="background-image: url(home-img/2.jpeg); " >
+    <section id="about" class="bg-cover" style="background-image: url(IMGES/home-img/2.jpeg); " >
 
         <div class="overlay"></div>
 
@@ -295,7 +295,7 @@
 
                 <div class="col-md-4 feature" data-aos="fade-up">
 
-                    <div class="icon"><i class="icon-tools"></i></div>
+                    <div class="icon" data-aos="fade-right"><i class="icon-tools"></i></div>
 
                     <h5 class="mt-4 mb-3">الدورات التعليمة</h5>
 
@@ -307,7 +307,7 @@
 
                 <div class="col-md-4 feature" data-aos="fade-up">
 
-                    <div class="icon">
+                    <div class="icon" data-aos="fade-right">
                         <i class="icon-browser"></i>
 
                     </div>
@@ -321,7 +321,7 @@
                 </div>
 
                 <div class="col-md-4 feature" data-aos="fade-up">
-                    <div class="icon">
+                    <div class="icon" data-aos="fade-right">
                         <i class="icon-calendar"></i>
 
                     </div>
@@ -335,7 +335,7 @@
                 </div>
 
                 <div class="col-md-4 feature" data-aos="fade-up" style="left: 20px">
-                    <div class="icon">
+                    <div class="icon" data-aos="fade-right">
                         <i class="icon-camera"></i>
 
                     </div>
@@ -350,7 +350,7 @@
 
                 <div class="col-md-4 feature" data-aos="fade-up " style="left: 20px">
 
-                    <div class="icon">
+                    <div class="icon" data-aos="fade-right">
 
                         <i class="icon-strategy"></i>
 
@@ -371,7 +371,7 @@
 
     <!--counters-->
 
-    <section class="bg-cover" style="background-image: url(home-img/3.jpeg);">
+    <section class="bg-cover" style="background-image: url(IMGES/home-img/3.jpeg);">
 
         <div class="overlay"></div>
 
@@ -458,7 +458,7 @@
 
                 <div class="col-md-4" data-aos="fade-up">
 
-                    <img class="bm" src="home-img/4.jpg" alt="">
+                    <img class="bm" src="IMGES/home-img/4.jpg" alt="">
 
                     <div class="mt-4" style="text-align: right" data-aos="fade-right">
 
@@ -474,7 +474,7 @@
 
                 <div class="col-md-4" data-aos="fade-up">
 
-                    <img class="bm" src="home-img/5.jpeg" alt="">
+                    <img class="bm" src="IMGES/home-img/5.jpeg" alt="">
 
                     <div class="mt-4" style="text-align: right"data-aos="fade-right">
 
@@ -490,7 +490,7 @@
 
                 <div class="col-md-4" data-aos="fade-up">
 
-                    <img class="bm" src="home-img/6.jpeg" alt="">
+                    <img class="bm" src="IMGES/home-img/6.jpeg" alt="">
 
                     <div class="mt-4" style="text-align: right"data-aos="fade-right">
 
@@ -512,7 +512,7 @@
 
     <!--contact-->
 
-    <section id="contact" class="bg-cover text-white" style="background-image: url(home-img/1.jpeg);">
+    <section id="contact" class="bg-cover text-white" style="background-image: url(IMGES/home-img/1.jpeg);">
 
         <div class="overlay"></div>
 

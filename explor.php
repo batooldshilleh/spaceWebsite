@@ -1,9 +1,10 @@
 <?php
 session_start();
-//if(isset(!$_SESSION['userName'])){
-//    header("loc:log.php");
-//}
-//?>
+
+if (!isset($_SESSION['userName'])){
+    header("Location:log.php");
+}
+?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -35,7 +36,7 @@ session_start();
             <div class="create">
                 <lable for="create-post" class="btn btn-primary">تسجيل الخروج</lable>
                 <div class="profile-photo">
-                    <img src="explor-img/profile-pic.jpeg" >
+                    <img src="IMGES/explor-img/profile-pic.jpeg" >
                 </div>
             </div>
         </div>
@@ -53,7 +54,7 @@ session_start();
 
                 <div class="profile-photo">
 
-                    <img src="explor-img/profile-pic.jpeg" >
+                    <img src="IMGES/explor-img/profile-pic.jpeg" >
 
                 </div>
 
@@ -88,7 +89,7 @@ session_start();
                         <div class="notification-popup">
                             <div>
                                 <div class="profile-photo">
-                                    <img  src="explor-img/profile-pic.jpeg" >
+                                    <img  src="IMGES/explor-img/profile-pic.jpeg" >
                                     </div>
                                 <div class="notification-body">
                                     <b>بسام تفاحة</b> قام بنشر حالة
@@ -97,7 +98,7 @@ session_start();
                             </div>
                             <div>
                                 <div class="profile-photo">
-                                    <img  src="explor-img/profile-pic.jpeg" >
+                                    <img  src="IMGES/explor-img/profile-pic.jpeg" >
                                 </div>
                                 <div class="notification-body">
                                     <b>بسام تفاحة</b> قام بنشر حالة
@@ -106,7 +107,7 @@ session_start();
                             </div>
                             <div>
                                 <div class="profile-photo">
-                                    <img  src="explor-img/profile-pic.jpeg" >
+                                    <img  src="IMGES/explor-img/profile-pic.jpeg" >
                                 </div>
                                 <div class="notification-body">
                                     <b>بسام تفاحة</b> قام بنشر حالة
@@ -115,7 +116,7 @@ session_start();
                             </div>
                             <div>
                                 <div class="profile-photo">
-                                    <img  src="explor-img/profile-pic.jpeg" >
+                                    <img  src="IMGES/explor-img/profile-pic.jpeg" >
                                 </div>
                                 <div class="notification-body">
                                     <b>بسام تفاحة</b> قام بنشر حالة
@@ -179,7 +180,7 @@ session_start();
         <div class="middle">
             <form class="create-post">
                 <div class="profile-photo">
-                    <img src="explor-img/profile-pic.jpeg">
+                    <img src="IMGES/explor-img/profile-pic.jpeg">
                 </div>
                 <input type="text" placeholder="بماذا تفكر؟" id="create-post">
                 <input type="submit" value="نشر" class="btn btn-primary">
@@ -189,7 +190,7 @@ session_start();
                     <div class="head">
                         <div class="user">
                             <div class="profile-photo">
-                                <img src="explor-img/profile-pic.jpeg" >
+                                <img src="IMGES/explor-img/profile-pic.jpeg" >
                             </div>
                             <div class="ingo">
                                 <h3>منار محمد</h3>
@@ -201,7 +202,7 @@ session_start();
                             </span>
                     </div>
                     <div class="photo">
-                        <img src="home-img/1.jpeg" >
+                        <img src="IMGES/home-img/1.jpeg" >
                     </div>
                     <div class="action-button">
                         <div class="interaction-buttons">
@@ -211,10 +212,10 @@ session_start();
                         </div>
                     </div>
                     <div class="like-by">
-                        <span><img src="home-img/3.jpeg" ></span>
-                        <span><img src="home-img/2.jpeg" ></span>
-                        <span><img src="home-img/4.jpg" ></span>
-                        <span><img src="home-img/5.jpeg" ></span>
+                        <span><img src="IMGES/home-img/3.jpeg" ></span>
+                        <span><img src="IMGES/home-img/2.jpeg" ></span>
+                        <span><img src="IMGES/home-img/4.jpg" ></span>
+                        <span><img src="IMGES/home-img/5.jpeg" ></span>
                         <p><b>سلسبيل محمد ، رهف نصر الله و 5 أخرين </b>أعجبو بمنشورك</p>
                     </div>
 
@@ -244,7 +245,7 @@ session_start();
                 </div>
                 <div class="message">
                     <div class="profile-photo">
-                        <img src="explor-img/profile-pic.jpeg">
+                        <img src="IMGES/explor-img/profile-pic.jpeg">
                     </div>
                     <div class="message-body">
                         <h5>رهف نصر الله</h5>

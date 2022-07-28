@@ -248,7 +248,7 @@ if(isset($_POST['lb'])){
 
       </div>
 
-      <img src="login-img/log.svg" class="image" alt="" />
+      <img src="IMGES/login-img/log.svg" class="image" alt="" />
 
     </div>
 
@@ -269,7 +269,7 @@ if(isset($_POST['lb'])){
 
       </div>
 
-      <img src="login-img/register.svg" class="image" alt="" />
+      <img src="IMGES/login-img/register.svg" class="image" alt="" />
 
     </div>
 
