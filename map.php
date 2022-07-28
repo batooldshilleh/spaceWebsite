@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body style="background:rgba(0,0,0,0) ">
-<iframe width="1900" height="1080" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+<iframe width="1250" height="570" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
         src="http://slowe.github.io/VirtualSky/embed?&projection=equirectangular&constellations=true&constellationlabels=true&showstarlabels
         =true&az=125.75&lang=ar"
         allowTransparency="true">

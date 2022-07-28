@@ -83,7 +83,7 @@ if (!isset($_SESSION['userName'])){
                 <a class="menu-item" id="notification" >
                     <span>
                         <i class="uil uil-bell"></i>
-                        <h3 style="position: absolute">الإشعارات</h3>
+                        <h3 style="position: absolute" >الإشعارات</h3>
                     </span>
                         <!--notification popup-->
                         <div class="notification-popup">
@@ -142,19 +142,6 @@ if (!isset($_SESSION['userName'])){
                         <h3>الإختبارات</h3>
                 </a>
 
-                <a class="menu-item" href="totorial.html">
-                    <span>
-                        <i class="uil uil-credit-card"></i>
-                    </span>
-                        <h3>الدورات التعليمية</h3>
-                </a>
-
-                <a class="menu-item" href="">
-                    <span>
-                        <i class="uil uil-calendar-alt"></i>
-                    </span>
-                        <h3>التقويم</h3>
-                </a>
 
                 <a class="menu-item" href="">
                     <span>
