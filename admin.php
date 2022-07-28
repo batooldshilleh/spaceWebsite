@@ -148,7 +148,40 @@
                     </h2>
                 </div>
                 <table>
-                    <tr></tr>
+                    <tr>
+
+                           <td width="60px"> <div class="imgBx"> <img src="IMGES/explor-img/profile-pic.jpeg"></div></td>
+                            <td><h4>  بتول شلة </h4><br><span>فلسطين</span></td>
+                    </tr>
+
+                    <tr>
+
+                        <td width="60px"> <div class="imgBx"> <img src="IMGES/explor-img/profile-pic.jpeg"></div></td>
+                        <td><h4> بسام تفاحة </h4><br><span>فلسطين</span></td>
+                    </tr>
+
+                    <tr>
+
+                        <td width="60px"> <div class="imgBx"> <img src="IMGES/explor-img/profile-pic.jpeg"></div></td>
+
+                        <td><h4> حنين خنفر </h4><br><span>الاردن</span></td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td width="60px"> <div class="imgBx"> <img src="IMGES/explor-img/profile-pic.jpeg"></div></td>
+
+                        <td><h4> صفاء الامريكية </h4><br><span>السودان</span></td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td width="60px"> <div class="imgBx"> <img src="IMGES/explor-img/profile-pic.jpeg"></div></td>
+                        <td><h4> ريم القواسمة </h4><br><span>الاردن</span></td>
+                    </tr>
+
                 </table>
             </div>
         </div>
