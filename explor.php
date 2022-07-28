@@ -73,17 +73,24 @@ if (!isset($_SESSION['userName'])){
             <!--sidebar-->
             <div class="sideBar">
 
-                <a class="menu-item active" href="explor.html">
+                <a class="menu-item active" href="explor.php">
                     <span>
                         <i class="uil uil-home " ></i>
                     </span>
                         <h3>الصغحة الرئيسية</h3>
                 </a>
+                <a class="menu-item" id="massages-notification" >
+                     <span>
+                        <i class="uil uil-envelope-check" ></i>
+                     </span>
+                    <h3>الرسائل</h3>
+
+                </a>
 
                 <a class="menu-item" id="notification" >
-                    <span>
+                    <span style="position: absolute">
                         <i class="uil uil-bell"></i>
-                        <h3 style="position: absolute" >الإشعارات</h3>
+                        <h3  > الإشعارات</h3>
                     </span>
                         <!--notification popup-->
                         <div class="notification-popup">
@@ -127,15 +134,9 @@ if (!isset($_SESSION['userName'])){
                     <!--end notification-popup -->
                 </a>
 
-                <a class="menu-item" id="massages-notification" >
-                     <span>
-                        <i class="uil uil-envelope-check" ></i>
-                     </span>
-                        <h3>الرسائل</h3>
 
-                </a>
 
-                <a class="menu-item" href="quizes/q.html">
+                <a class="menu-item" href="quiz.html">
                      <span>
                         <i class="uil uil-bolt"></i>
                      </span>
@@ -143,7 +144,7 @@ if (!isset($_SESSION['userName'])){
                 </a>
 
 
-                <a class="menu-item" href="">
+                <a class="menu-item" href="map.php">
                     <span>
                         <i class="uil uil-telescope"></i>
                     </span>
