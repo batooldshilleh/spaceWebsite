@@ -1,0 +1,29 @@
+CREATE TABLE IF NOT EXISTS ` user` (  
+  `id` int(11) NOT NULL AUTO_INCREMENT,  
+  `userName`varchar(255) NOT NULL,  
+  `password`varchar(255) NOT NULL,   
+  PRIMARY KEY (`id`)  
+ )
+
+//////////////////////////////////////////////////////
+
+CREATE TABLE IF NOT EXISTS ` admin` (  
+  `id` int(11) NOT NULL AUTO_INCREMENT,  
+  `name`varchar(255) NOT NULL,  
+  `add`varchar(255) NOT NULL,   
+  PRIMARY KEY (`id`)  
+ )
+
+///////////////////////////////////////////////////////
+
+INSERT INTO user (userName,	email,password) VALUES ('$un','$em','$p')
+
+//////////////////////////////////////////////////////
+
+SELECT * FROM user WHERE userName = '$un'
+
+//////////////////////////////////////////////////////
+
+SELECT * FROM user WHERE email='$u_n' AND password='$pass'
+
+///////////////////////////////////////////////////////
